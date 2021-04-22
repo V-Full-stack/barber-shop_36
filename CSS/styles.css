@@ -81,6 +81,10 @@ body {
   color: var(--title-cl);
 }
 
+.white-space {
+  white-space: nowrap;
+}
+
 .hero-title {
   font-size: 72px;
   line-height: 1.18;
@@ -94,7 +98,7 @@ body {
 .title-label {
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.39;
+  line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: (--title-cl);
@@ -120,6 +124,11 @@ body {
   color: var(--alt-text-cl);
 }
 
-.dark-bg .title {
+.dark-bg .title,
+.dark-bg .btn {
   color: var(--alt-title-cl);
+}
+
+.dark-bg .title-label {
+  color: var(--alt-text-cl);
 }
