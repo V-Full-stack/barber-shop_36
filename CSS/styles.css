@@ -30,6 +30,17 @@ body {
   color: var(--main-text-cl);
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 .link {
   color: inherit;
   text-decoration: none;
@@ -46,4 +57,69 @@ body {
 
 .address {
   font-style: inherit;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--title-cl);
+  background-color: transparent;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--alt-title-cl);
+  background-color: var(--accent-cl);
+}
+
+.title {
+  font-family: var(--title-font);
+  letter-spacing: 0.05em;
+  color: var(--title-cl);
+}
+
+.hero-title {
+  font-size: 72px;
+  line-height: 1.18;
+}
+
+.section-title {
+  font-size: 42px;
+  line-height: 1.17;
+}
+
+.title-label {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: (--title-cl);
+}
+
+.team-item {
+  text-align: center;
+}
+.team-item-name {
+  font-weight: 400;
+  line-height: 1.39;
+  color: var(--title-cl);
+}
+
+.team-item-position {
+  font-size: 14px;
+  line-height: 1.36;
+  color: var(--accent-cl);
+}
+
+.dark-bg {
+  background-color: var(--dark-bg);
+  color: var(--alt-text-cl);
+}
+
+.dark-bg .title {
+  color: var(--alt-title-cl);
 }
