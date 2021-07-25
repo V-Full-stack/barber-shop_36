@@ -8,6 +8,7 @@
   font-size: normal;
   font-display: swap;
 }
+
 :root {
   --main-text-cl: #555555;
   --title-cl: #303030;
@@ -20,6 +21,17 @@
 
   --main-font: "Open-sans", sans-serif;
   --title-font: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 html {
@@ -46,8 +58,17 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  margin: 0 auto;
 }
 
+.container {
+  width: 1280px;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 .suptitle {
   font-size: 11px;
   font-weight: 600;
@@ -88,17 +109,6 @@ body {
 
 .logo {
   margin-right: 70px;
-}
-
-.btn {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--title-cl);
-  background-color: transparent;
-  cursor: pointer;
 }
 
 .btn:hover,
@@ -170,17 +180,27 @@ body {
   margin-right: 70px;
 }
 
-/* COMPONENTS */
+/* --- >>> COMPONENTS <<< --- */
+
+.tel-link {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  margin-left: auto;
+  margin-right: 40px;
+}
 
 .btn-link {
   border: 1px solid #ff6c00;
+  /* box-sizing: border-box; */
   border-radius: 25px;
-  background-color: transparent;
+
   padding: 12px 20px;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -228,9 +248,10 @@ body {
   line-height: 1.17;
 }
 
-.team-item {
+.masters-list-content {
   text-align: center;
 }
+
 .team-item-name {
   font-weight: 400;
   line-height: 1.39;
@@ -238,19 +259,32 @@ body {
 }
 
 .masters-list-position {
+  text-align: center;
   font-size: 14px;
   line-height: 1.36;
   color: var(--accent-cl);
 }
 
-.container {
-  width: 1280px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .section {
   padding-top: 130px;
   padding-right: 130px;
+}
+
+/* >>> MODAL WINDOW <<< */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: none;
+  transition: ;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
